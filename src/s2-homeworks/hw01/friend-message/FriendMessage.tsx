@@ -26,16 +26,16 @@ const FriendMessage = (props:FriendMessageTypeProps) => {
                         id={'hw1-friend-name-' + props.message.id}
                         className={s.friendName}
                     >
-                        {/*создаёт студент*/}
-                            Ivan
+                        {props.message.user.name}
+
                         {/**/}
                     </div>
                     <pre
                         id={'hw1-friend-text-' + props.message.id}
                         className={s.friendMessageText}
                     >
-                        {/*создаёт студент*/}
-                        Hello, how are you, what did you do yesterday?
+                        {props.message.message.text}
+
                         {/**/}
                     </pre>
                 </div>
@@ -44,8 +44,8 @@ const FriendMessage = (props:FriendMessageTypeProps) => {
                 id={'hw1-friend-time-' + props.message.id}
                 className={s.friendTime}
             >
-                {/*создаёт студент*/}
-                    09:01
+                {props.message.message.time}
+
                 {/**/}
             </div>
         </div>
