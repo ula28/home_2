@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Message.module.css'
 import {MessageType} from "../HW1";
-import avator from "../avatar.png";
+import avatar from "../avatar.png";
 
 // нужно создать правильный тип вместо any
 export type MessagePropsType = {
@@ -16,7 +16,7 @@ const Message = (props: MessagePropsType) => {
                 <img
                     id={'hw1-avatar-' + props.message.id}
                     // создаёт студент
-                    src={avator} alt=""
+                    src={avatar} alt=""
                     //
                 />
                 <div className={s.text}>
